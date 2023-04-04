@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Title of the document</title>
+  <lenk rel="stylesheet" href ="{{url_for("static",filename="css/index.css")}}">
+</head>
+<body>
+
+<h1>Title of the  Website</h1>
+<h3>Subheader: Something Something</h3>
+<hr>
+<ul>
+  <li><a href="/index">Home Page</a></li>
+  <li><a href="/about">About Page</a></li>
+</ul>
+
+{%block main%}
+
+{%endblock main%}
+
+</body>
+</html>
