@@ -14,3 +14,17 @@ A introduction to Flask and how to utilize it in real web application.
     app.app_context().push()
     db.create_all() -->
 
+    How I have solved d.create_all() problems?
+        https://stackoverflow.com/questions/73961938/flask-sqlalchemy-db-create-all-raises-runtimeerror-working-outside-of-applicat
+            FOR CMD
+                >>> from project import app, db
+                >>> app.app_context().push()
+                >>> db.create_all()
+    
+    How I have resolved this 
+        TypeError: scoped_session.commit() takes 1 positional argument but 2 were given
+            db.seesion.commit() -----> Remove t from commit parameters
+    
+        
+
+

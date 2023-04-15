@@ -2,7 +2,11 @@
 
 {%block main%}
 
-<p>Something about Home Page</p>
-
+<h1>Tasks</h1>
+<ul>
+    {%for task in tasks%}
+        <li>{{task.title}} created on {{task.date}}</li>
+    {% endfor %}
+</ul>
 {%endblock%}
 
